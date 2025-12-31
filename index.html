@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Temple</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: #111;
+            color: red;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        /* Main sections */
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: red;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="number"], input[type="file"] {
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 12px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+
+<img src="l1.jpg" alt="logo" width="360" height="200">
+
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#membership">Membership</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+
+<img src="l3.jpg" alt="logo" width="360" height="200">
+
+        <p>
+            welcome to secret temple at kumasi breman where most people are made rich and with no human sacrifices.if you become a member of this secret society,you will receive 1,000,000.00 million Ghana cedis to buy house,car and open business.no human sacrifices involved,no premature death,no go home to do rituals.
+            you also get protection from the gods,magic box that will be producing money for you each day 5,000.00 Ghana cedis so that you never had to run out of money again.
+            Join us to explore ancient knowledge, receive guidance, and become part of our sacred family.
+
+<img src="b4.jpg" alt="logo" width="360" height="200">
+
+        </p>
+        <h2>Rules About the brotherhood</h2>
+          <p>1.if you become a member,you can' quit.
+             2. you can't tell anyone that you are part of a secret society
+              3. every three months,you become for thanksgiving and meetings to do sacrifice of big white cow to the gods.
+
+<img src="b2.jpg" alt="logo" width="360" height="200">
+
+              
+              </p>
+          <h2>How To Join The secret Temple</h2>
+          <p>if you want to join the societ,you send us your full name,age,telephone number and picture. then i will send you a momo number for you to make payment of 500 Ghana cedis for your membership card. the 500 cedis will be used to buy your occult uniform,ring,magic ring and a box and oil for the baptism into the society .if you are ready,fill the form below to join us👇</p>
+
+<img src="l2.jpg" alt="logo" width="360" height="200">
+
+          
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership">
+        <h2>Membership Form</h2>
+        <form id="membershipForm">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <input type="number" id="age" placeholder="Age" min="1" max="120" required>
+            <input type="text" id="telephone" placeholder="Telephone (start with 0)" pattern="0[0-9]{9}" required>
+            <input type="file" id="photo" accept="image/*" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+   
+     <h2> PEOPLE WHO HAVE TESTIFIED</h2>
+     
+     
+     </h>testified</h2>
+
+<img src="t1.jpg" alt="logo" width="360" height="200">
+
+<img src="t2.jpg" alt="logo" width="360" height="200">
+
+<img src="t3.jpg" alt="logo" width="360" height="200">
+
+<img src="t4.jpg" alt="logo" width="360" height="200">
+
+
+     <h2>BENEFITS</h2>
+<img src="b2.jpg" alt="logo" width="360" height="200">
+
+<img src="b3.jpg" alt="logo" width="360" height="200">
+
+<img src="b4.jpg" alt="logo" width="360" height="200">
+    
+    <h2>The Grandmasters of the secret temple</h2>
+    
+    <center>   <p>we have three powerful grandmasters.the head is from india.his name is lord shiva khan ,two other masters at kumasi breman .headed by Grandmaster yusif. below is the indian Grandmaster👇</p> </center>
+<img src="Grandmaster.png" alt="logo" width="350" height="250">
+    <!-- Footer -->
+    <footer>&copy; since 2018  Secret Temple. All Rights Reserved.</footer>
+
+    <script>
+        document.getElementById('membershipForm').addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const age = document.getElementById('age').value;
+            const telephone = document.getElementById('telephone').value;
+
+            const message = `Membership Request:%0AName: ${fullname}%0AAge: ${age}%0ATelephone: ${telephone}`;
+            const phoneNumber = '233507439521'; // WhatsApp number with country code (Ghana)
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+
+            window.open(url, '_blank');
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
